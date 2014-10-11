@@ -31,6 +31,7 @@ class ViewController: UIViewController {
         myTiger.age = 33
         myTiger.breed = "doggy from france"
         myTiger.image = UIImage(named: "BengalTiger.jpg")
+        myTiger.chuffNumberOfTime(8)
         
         println("my tiger name is : \(myTiger.name) and is age is \(myTiger.age) and it's breed is    \(myTiger.breed) and the image \(myTiger.image)")
         
@@ -49,6 +50,8 @@ class ViewController: UIViewController {
         myTiger2.breed = "doggy from loomba"
         myTiger2.image = UIImage(named: "IndochineseTiger.jpg")
         
+        myTiger2.chuff()
+        
         myTigerName.text = myTiger2.name
         myTigerAge.text = "\(myTiger2.age)"
         myTigerBreed.text = myTiger2.breed
@@ -60,7 +63,7 @@ class ViewController: UIViewController {
         thirdTiger.breed = "don't really know"
         thirdTiger.image = UIImage(named: "Lioness.jpeg")
         
-      myTigerName.text = thirdTiger.name
+        myTigerName.text = thirdTiger.name
         myTigerAge.text = "\(thirdTiger.age)"
         myTigerBreed.text = thirdTiger.breed
         myImageView.image = thirdTiger.image

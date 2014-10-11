@@ -10,13 +10,73 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "the tiger/ViewController.swift"
-            timestampString = "434315515.838203"
+            timestampString = "434432448.85394"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
             landmarkName = "showAnother(_:)"
             landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "the tiger/ViewController.swift"
+            timestampString = "434687542.055871"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
+            landmarkName = "showAnother(_:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "the_tiger.ViewController.showAnother (the_tiger.ViewController)(ObjectiveC.UIBarButtonItem) -&gt; ()"
+                  moduleName = "the tiger"
+                  urlString = "file:///Users/GILBERT/Desktop/xcode%20program/the%20tiger/the%20tiger/ViewController.swift"
+                  timestampString = "434687542.073155"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "114"
+                  endingLineNumber = "114"
+                  offsetFromSymbolStart = "512">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "the_tiger.ViewController.(showAnother (the_tiger.ViewController) -&gt; (ObjectiveC.UIBarButtonItem) -&gt; ()).(closure #1)"
+                  moduleName = "the tiger"
+                  urlString = "file:///Users/GILBERT/Desktop/xcode%20program/the%20tiger/the%20tiger/ViewController.swift"
+                  timestampString = "434687542.074078"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "116"
+                  endingLineNumber = "116"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "reabstraction thunk helper from @callee_owned () -&gt; (@unowned ()) to @callee_unowned @objc_block () -&gt; (@unowned ())"
+                  moduleName = "the tiger"
+                  urlString = "file:///Users/GILBERT/Desktop/xcode%20program/the%20tiger/the%20tiger/ViewController.swift"
+                  timestampString = "434687542.074253"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "114"
+                  endingLineNumber = "114"
+                  offsetFromSymbolStart = "9">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
