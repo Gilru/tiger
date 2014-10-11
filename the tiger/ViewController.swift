@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var myTigerName: UILabel!
     @IBOutlet weak var myTigerAge: UILabel!
     @IBOutlet weak var myTigerBreed: UILabel!
+    @IBOutlet weak var myTigerFact: UILabel!
     
     var myTigers:[Tiger] = []
     var currentIndex = 0
@@ -31,14 +32,16 @@ class ViewController: UIViewController {
         myTiger.age = 33
         myTiger.breed = "doggy from france"
         myTiger.image = UIImage(named: "BengalTiger.jpg")
-        myTiger.chuffNumberOfTime(8)
+       
+      myTiger.age = myTiger.ageInTigersYearsFromAge(myTiger.age)
         
         println("my tiger name is : \(myTiger.name) and is age is \(myTiger.age) and it's breed is    \(myTiger.breed) and the image \(myTiger.image)")
         
-        myTigerName.text = myTiger.name
-        myTigerAge.text = "\(myTiger.age)"
-        myTigerBreed.text = myTiger.breed
-        myImageView.image = myTiger.image
+        self.myTigerName.text = myTiger.name
+        self.myTigerAge.text = "\(myTiger.age)"
+        self.myTigerBreed.text = myTiger.breed
+        self.myImageView.image = myTiger.image
+        self.myTigerFact.text = myTiger.random()
         
         
         
@@ -50,23 +53,32 @@ class ViewController: UIViewController {
         myTiger2.breed = "doggy from loomba"
         myTiger2.image = UIImage(named: "IndochineseTiger.jpg")
         
-        myTiger2.chuff()
+        myTiger2.age = myTiger2.ageInTigersYearsFromAge(myTiger2.age)
         
-        myTigerName.text = myTiger2.name
-        myTigerAge.text = "\(myTiger2.age)"
-        myTigerBreed.text = myTiger2.breed
-        myImageView.image = myTiger2.image
+       
+        
+        
+        
+        self.myTigerName.text = myTiger2.name
+        self.myTigerAge.text = "\(myTiger2.age)"
+        self.myTigerBreed.text = myTiger2.breed
+        self.myImageView.image = myTiger2.image
+        
         
         var thirdTiger = Tiger()
         thirdTiger.name = "Third Tigger"
         thirdTiger.age = 34
         thirdTiger.breed = "don't really know"
         thirdTiger.image = UIImage(named: "Lioness.jpeg")
+        thirdTiger.age = thirdTiger.ageInTigersYearsFromAge(thirdTiger.age)
         
-        myTigerName.text = thirdTiger.name
-        myTigerAge.text = "\(thirdTiger.age)"
-        myTigerBreed.text = thirdTiger.breed
-        myImageView.image = thirdTiger.image
+        
+        
+        self.myTigerName.text = thirdTiger.name
+        self.myTigerAge.text = "\(thirdTiger.age)"
+        self.myTigerBreed.text = thirdTiger.breed
+        self.myImageView.image = thirdTiger.image
+        
         
         var myFourthTiger = Tiger()
         myFourthTiger.name = "foutty tog"
@@ -74,13 +86,18 @@ class ViewController: UIViewController {
         myFourthTiger.breed = "some other breed"
         myFourthTiger.image = UIImage(named: "SiberianTiger.jpg")
         
-        myTigerName.text = myFourthTiger.name
-        myTigerAge.text = "\(myFourthTiger.age)"
-        myTigerBreed.text = myFourthTiger.breed
-        myImageView.image = myFourthTiger.image
+        myFourthTiger.age = myFourthTiger.ageInTigersYearsFromAge(myFourthTiger.age)
+        
+        self.myTigerName.text = myFourthTiger.name
+        self.myTigerAge.text = "\(myFourthTiger.age)"
+        self.myTigerBreed.text = myFourthTiger.breed
+        self.myImageView.image = myFourthTiger.image
         
         
-        myTigers += [myTiger,myTiger2,thirdTiger,myFourthTiger]
+        
+        self.myTigers += [myTiger,myTiger2,thirdTiger,myFourthTiger]
+        
+        
         
     }
     
@@ -99,9 +116,9 @@ class ViewController: UIViewController {
         
         do{
            generator = Int(arc4random_uniform(UInt32(myTigers.count)))
-        } while generator == currentIndex
+        } while generator == self.currentIndex
         
-        currentIndex = generator
+        self.currentIndex = generator
         
         let tiger = myTigers[generator]
         
@@ -117,6 +134,7 @@ class ViewController: UIViewController {
             self.myTigerName.text = tiger.name
             self.myTigerBreed.text = tiger.breed
             self.myTigerAge.text = "\(tiger.age)"
+            self.myTigerFact.text = tiger.random()
           
             
             
@@ -126,6 +144,6 @@ class ViewController: UIViewController {
         
         
     }
-
+   
 }
 

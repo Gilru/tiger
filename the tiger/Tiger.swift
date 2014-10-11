@@ -25,4 +25,39 @@ struct Tiger {
             chuff()
         }
     }
+    
+    func chuffNumberOfTime(number: Int, isLoud: Bool){
+        
+        for var start = 0; start < number; start++ {
+            if isLoud{
+                chuff()
+            }else{
+               println("burr burr")
+            }
+            
+        }
+    }
+    
+    
+    func ageInTigersYearsFromAge(regularAge: Int) -> Int {
+        
+        let newAge = regularAge * 3
+        println("\(newAge)")
+        return newAge
+    }
+    
+    func random() -> String {
+        var randomNumber = Int(arc4random_uniform(UInt32(3)))
+        var randomFact = ""
+        
+        if randomNumber == 0 {
+           randomFact = "Tiger is the most dangerous speciess"
+        }else if randomNumber == 1 {
+            randomFact = "Lion is the king of the jungle"
+        }else{
+            randomFact = "there is not answer for that question"
+        }
+        return randomFact
+    }
 }
+

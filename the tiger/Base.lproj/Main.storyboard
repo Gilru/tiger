@@ -42,7 +42,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="27" y="422" width="145" height="21"/>
+                                    <rect key="frame" x="27" y="352" width="145" height="21"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zef-Ng-RDb">
@@ -51,7 +51,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="27" y="387" width="99" height="21"/>
+                                    <rect key="frame" x="27" y="317" width="99" height="21"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breed" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxb-8Q-Har">
@@ -60,7 +60,16 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="27" y="463" width="161" height="21"/>
+                                    <rect key="frame" x="27" y="393" width="161" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fact" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAZ-SM-abx">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="27" y="437" width="234" height="70"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -72,6 +81,7 @@
                                 <exclude reference="PZL-6g-xrz"/>
                                 <exclude reference="zef-Ng-RDb"/>
                                 <exclude reference="pxb-8Q-Har"/>
+                                <exclude reference="GAZ-SM-abx"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -81,6 +91,7 @@
                                 <include reference="PZL-6g-xrz"/>
                                 <include reference="zef-Ng-RDb"/>
                                 <include reference="pxb-8Q-Har"/>
+                                <include reference="GAZ-SM-abx"/>
                             </mask>
                         </variation>
                     </view>
@@ -90,6 +101,7 @@
                         <outlet property="myImageView" destination="jW3-Jj-ruM" id="GN0-dP-Wtn"/>
                         <outlet property="myTigerAge" destination="PZL-6g-xrz" id="OCm-7A-HAI"/>
                         <outlet property="myTigerBreed" destination="pxb-8Q-Har" id="muK-xB-DUn"/>
+                        <outlet property="myTigerFact" destination="GAZ-SM-abx" id="PDw-T9-k0F"/>
                         <outlet property="myTigerName" destination="zef-Ng-RDb" id="vOx-Ao-1zq"/>
                     </connections>
                 </viewController>
